@@ -1,0 +1,30 @@
+:root {
+  --bg-button: rgb(20, 20, 20);
+  --border-button: solid 1.3px rgb(40, 40, 40);
+  --button-hover: rgba(0, 0, 0, 0.9);
+}
+
+.button {
+  font-size: 1.4em;
+  background-color: var(--bg-button);
+  border: var(--border-button);
+  outline: none;
+  color: white;
+}
+
+.button:hover,
+.button.operation:hover {
+  background-color: var(--button-hover);
+}
+
+.button.double {
+  grid-column: span 2;
+}
+
+.button.triple {
+  grid-column: span 3;
+}
+
+.button.operation {
+  background-color: rgb(30, 30, 30);
+}
